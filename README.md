@@ -5,6 +5,13 @@ This is a Spring Boot application, It's A smart elevator scheduling system
 built using **Java** and **Spring Boot**, designed to efficiently manage 
 multiple lifts based on user floor requests, timing logic, and optimization strategies.
 
+- Current lift position
+- Direction of movement
+- Pending requests
+- Optimization to reduce waiting time
+- Energy-efficient scheduling
+
+
 # Project Structure
 store-billing-app
 │── src
@@ -30,6 +37,21 @@ store-billing-app
 │   │   ├── application.properties
 │── pom.xml
 │── README.md
+
+
+## ⚙️ Features
+-  Smart lift assignment algorithm
+-  Optimized scheduling to reduce waiting time
+-  Real-time lift state tracking
+-  Persistent data storage using MySQL
+-  RESTful APIs for managing lift requests
+-  Modular backend architecture
+
+
+## System Architecture
+
+Client Request → REST Controller → Service Layer → Scheduling Logic → Database  
+Lift Status Updated → Response Returned to Client
 
 
 ## Prerequisites
@@ -74,10 +96,6 @@ store-billing-app
        mvn verify
 
 
-
-```Security
-The application uses a secret key stored in application.properties for authentication and security purposes
-```
 
 ## Author
 
